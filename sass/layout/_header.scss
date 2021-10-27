@@ -1,0 +1,36 @@
+
+.header{
+    height: 95VH;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.6),
+    rgba($color-secondary, 0.6)),
+      url(../images/me.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 94%);
+    position: relative;
+ 
+    &__text-box{
+     text-align: center;
+     color: $color-white;
+     position: relative;
+     top: 1rem;
+    }
+
+    &-primary{
+   font-size: 5rem;
+   font-weight: 700;
+   animation: slideInLeft 1s .3s backwards; 
+   transition: cubic-bezier(.17,.67,.83,.67);
+    }
+
+    &-sub{
+    font-size: 3rem;
+    display: block;
+    margin: 0 auto;
+    font-style:italic;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    animation: slideInRight 1s .5s backwards;
+    }
+}
